@@ -43,6 +43,8 @@ Find the file `index.js` and complete the tasks.
 Edit the `ReadMe` file with your answers.
 
 1. In your own words, define closure (1-2 sentences).
+A closure occurs when a function reaches outside itself to access variables.
+
 2. Study the following code, then answer the questions below.
 
 ```js
@@ -64,8 +66,13 @@ dansRoll();
 ```
 
 a. Where is closure used in this code? How can you tell?
+A closure occurred in the nested function inside of personalDice. You can tell by noticing that the inner function reached outside itself to access the name parameter.
+
 b. Compare and contrast calling `dansRoll` the first and second time. What is always the same? What could change?
+dansRoll did not alway return the same value. Each time the inner function was invoked, a random number was generated -- this is what changed.
+
 c. What is the lexical scope of `newRoll`? 
+newRoll is accessible only inside of the inner function -- can't be accessed in outside of the function (personalDice).
 
 
 ### Task 3 - Stretch Goals
